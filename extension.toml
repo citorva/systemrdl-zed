@@ -1,0 +1,11 @@
+id = "systemrdl"
+name = "SystemRDL"
+version = "0.0.1"
+schema_version = 1
+authors = ["Citorva <contact@citorva.fr>"]
+description = "SystemRDL Language Support"
+repository = "https://github.com/citorva/systemrdl-zed"
+
+[grammars.systemrd]
+repository = "https://github.com/SystemRDL/tree-sitter-systemrdl"
+commit = "2c27e329f7724e39f40439e68e22133e285a3e3b"

@@ -1,0 +1,16 @@
+name = "SystemRDL"
+grammar = "systemrdl"
+path_suffixes = ["rdl"]
+line_comments = ["// "]
+brackets = [
+    { start = "(", end = ")", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = [
+        "comment",
+        "string",
+    ] },
+]
+
+auto_indent_using_last_non_empty_line = false
+increase_indent_pattern = "{\\s*$"
