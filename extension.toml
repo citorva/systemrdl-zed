@@ -6,6 +6,6 @@ authors = ["Citorva <contact@citorva.fr>"]
 description = "SystemRDL Language Support"
 repository = "https://github.com/citorva/systemrdl-zed"
 
-[grammars.systemrd]
-repository = "https://github.com/SystemRDL/tree-sitter-systemrdl"
-commit = "2c27e329f7724e39f40439e68e22133e285a3e3b"
+[grammars.systemrdl]
+repository = "https://github.com/citorva/tree-sitter-systemrdl"
+commit = "4302f3d70b33911b88c1e4d6622ec2f88de68f3d"

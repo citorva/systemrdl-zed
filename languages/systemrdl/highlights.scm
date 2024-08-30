@@ -1,10 +1,8 @@
-(id) @variable
-
-(argument) @property
-
-(type_block repr: (type) @type)
-(enum_block repr: (type) @type)
-(type) @type
+[
+  (preprocessor)
+  (pre_defined_content)
+  (template)
+] @preproc
 
 ; Literals
 
@@ -23,17 +21,17 @@
 
 (comment) @comment
 (string_literal) @string
-(escape_sequence) @escape
+; (escape_sequence) @escape
 
 [
   (binary_operator)
   (unary_operator)
 ] @operator
 
-[
-  "#("
-  ")"
-] @punctuation.bracket
+; [
+;   "#("
+;   ")"
+; ] @punctuation.bracket
 
 [
   "="
@@ -42,16 +40,21 @@
 ] @punctuation.delimiter
 
 [
-  "from"
-  "import"
+  "field"
+  "reg"
+  "regfile"
+  "addrmap"
+  "signal"
   "enum"
-  "type"
-  "struct"
-  "condition"
-  "filter"
+  "mem"
+  "constraint"
+  "property"
+  "default"
 ] @keyword
 
 [
   (simple_type)
   "boolean"
 ] @type
+
+(explicit_component_inst id: (_) @type)

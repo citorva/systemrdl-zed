@@ -13,4 +13,4 @@ brackets = [
 ]
 
 auto_indent_using_last_non_empty_line = false
-increase_indent_pattern = "{\\s*$"
+increase_indent_pattern = "\\{\\s*$"
